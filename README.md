@@ -18,6 +18,11 @@ Repository of custom python scripts used in "A transcriptomic pipeline adapted f
 	  * tidyverse
 	* Python v. 2.7.16 https://www.python.org/downloads/release/python-2716/
 	* Biopython https://biopython.org/
+
+## Getting Source Code
+```{r, eval=FALSE}
+$ git clone https://github.com/brachtlab/Comparative_Coverage_Analysis.git
+```
 	
 ## Protocol 1. Read Mapping
 
@@ -214,15 +219,7 @@ Do download the high confidence set:
 write.csv(high_conf_outliers, file = "high_conficence_outliers.csv")
 ```
 
-## Supplemental Scripts
-
-### buildgff.py
-```{r, eval=FALSE}
-$ /PATH_to_script/buildgff.py <blast_outfmt6.txt>
-```
-Builds a gff from a blast output in outfmt 6. 
-
-## Scripts used for Reciprocal BLAST Match
+## Reciprocal BLAST Match
 ### RBM.py
 ```{r, eval=FALSE}
 $ /PATH_to_script/RBM.py <blast_output1> <blast_output2>
